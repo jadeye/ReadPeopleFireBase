@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+<!--
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="6dip"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_launcher_background" />
+-->
+
+    <CheckBox
+        android:id="@+id/cbid"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="6dip"
+        android:layout_marginRight="12dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:layout_toStartOf="@id/cbid"
+        android:layout_alignParentTop="true"
+        android:lineHeight="18dp"
+        android:maxLines="1"
+        android:text="@string/name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:layout_below="@+id/name"
+        android:layout_toStartOf="@id/cbid"
+        android:lineHeight="12dp"
+        android:maxLines="1"
+        android:text="@string/date"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:layout_below="@id/date"
+        android:layout_toStartOf="@id/cbid"
+        android:lineHeight="18dp"
+        android:maxLines="1"
+        android:text="@string/additional_description"
+        android:textSize="16sp" />
+
+    <!--<EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:autofillHints="" />-->
+
+</RelativeLayout>

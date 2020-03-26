@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Read-People-FireBase</string>
+    <string name="date">Date</string>
+    <string name="additional_description">Additional description</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+</resources>
